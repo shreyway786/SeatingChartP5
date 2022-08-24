@@ -156,6 +156,10 @@ public class Classroom extends World
         AnitAnnadi anitannadi = new AnitAnnadi();
         addObject(anitannadi,5,3);
         anitannadi.assignSeat();
+        
+        RichardWu richardwu = new RichardWu();
+        putObject(richardwu,richardwu.mySeatX,richardwu.mySeatY);
+        richardwu.assignSeat();
   
     }
     
@@ -163,6 +167,24 @@ public class Classroom extends World
        List<Student> s = getObjects(Student.class);  
        return s;
     }
+    public void putObject(Student student, int x, int y){
+        int x_amt = 1;
+        if (x == 3 | x == 4) {
+            x_amt ++ ;
+        }
+        if (x == 5 | x == 6) {
+            x_amt = x_amt + 2 ;
+        }
+        int y_amt = 2;
+        if (y == 3 | y == 4) {
+            y_amt ++;
+        }
+        if (y == 5 | y == 6) {
+            y_amt = y_amt + 2;
+        }
+        addObject(student, x+x_amt, y+y_amt);
+    }
+    
     
   
     /**
