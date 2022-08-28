@@ -160,7 +160,10 @@ public class Classroom extends World
         RichardWu richardwu = new RichardWu();
         putObject(richardwu,richardwu.mySeatX,richardwu.mySeatY);
         richardwu.assignSeat();
-  
+
+        UttaraRai uttararai = new UttaraRai();
+        addObject(uttararai,9,7);
+        uttararai.assignSeat();
     }
     
     public List<Student> getAllStudents(){
