@@ -155,41 +155,23 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
         Greenfoot.delay(10);
         
         Greenfoot.delay(10);
-        setLocation(2,4);
+        setLocation(5,9);
         Greenfoot.delay(10);
-        setLocation(9,4);
+        setLocation(9,9);
         Greenfoot.delay(10);
-        setLocation(3,4);
+        setLocation(6,9);
         Greenfoot.delay(10);
-        setLocation(8,4);
-        Greenfoot.delay(10);
-        setLocation(5,4);
-        Greenfoot.delay(10);
-        setLocation(6,4);
+        setLocation(8,9);
         Greenfoot.delay(10);
         
-        // move down
-        for (int i=3;i<=5;i++){
-            setLocation(1,i);
-            Greenfoot.delay(30);
-        }
         // move right
-        for (int i=2;i<=7;i++){
-            setLocation(i,5);
-            Greenfoot.delay(30);
-        }      
-         // move down
-        for (int i=6;i<=8;i++){
-            setLocation(7,i);
-            Greenfoot.delay(30);
-        }
-         // move left
-        for (int i=6;i>=4;i--){
+        for (int i=0;i<=9;i++){
             setLocation(i,8);
-            Greenfoot.delay(30);
+            Greenfoot.delay(10);
         }
-           Greenfoot.delay(20);
-           returnToSeat();
+                   
+        Greenfoot.delay(20);
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
