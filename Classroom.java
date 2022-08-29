@@ -164,6 +164,10 @@ public class Classroom extends World
         UttaraRai uttararai = new UttaraRai();
         addObject(uttararai,9,7);
         uttararai.assignSeat();
+        
+        YaninCharoenpornsawat yanincharoenpornsawat = new YaninCharoenpornsawat();
+        addObject(yanincharoenpornsawat,2,4);
+        yanincharoenpornsawat.assignSeat();
     }
     
     public List<Student> getAllStudents(){
