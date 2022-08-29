@@ -25,7 +25,7 @@ NOTE: Each class build-master should fork the main repo to a new repo before sta
 
 3) Clone (first time, each class build-master should fork, so that each class has their own copy) the repository into the directory where git bash is pointing:
 
-    git clone https://github.com/DHS-CP/GreenfootSeatingChartMaster2021-22.git  (this will change based on fork created by build-master(s).
+    git clone  (reference the link provided for the branch)).
 
 NOTE: This should set up all initial conditions for GIT and avoid a lot of confusion.
 
@@ -54,7 +54,7 @@ git commit -m “adding my files to the repository”
 8) Push your changes to the remote repository (each period should have their own cloned or branched version to work with.
 Do not commit back to the master repo:
 
-git push
+git push 
 
 
 ASSIGNMENT INSTRUCTIONS IN BRIEF
