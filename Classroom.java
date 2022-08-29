@@ -168,6 +168,15 @@ public class Classroom extends World
         SohaAhmad sohaahmad = new SohaAhmad();
         addObject(sohaahmad,2,3);
         sohaahmad.assignSeat(); 
+        
+        SanjanaAlluri sanjanaalluri = new SanjanaAlluri();
+        addObject(sanjanaalluri,3,3);
+        sanjanaalluri.assignSeat();
+        
+        SanjanaAlluri sanjanasfood = new SanjanaAlluri();
+        addObject(sanjanasfood,11,8);
+        sanjanasfood.assignSeat();
+        sanjanasfood.setImage("transparent.jpg");
     }
     
     public List<Student> getAllStudents(){
