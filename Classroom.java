@@ -156,6 +156,10 @@ public class Classroom extends World
         HarutoSuzuki haruto = new HarutoSuzuki();
         addObject(haruto,9,9);
         haruto.assignSeat();
+
+        AnitAnnadi anitannadi = new AnitAnnadi();
+        addObject(anitannadi,5,3);
+        anitannadi.assignSeat();
   
     }
     

@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The HarutoSuzuki class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The ShreyasTulsi class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Haruto
- * @version 2.0 Aug 19, 2022
+ * @author Mr. Kaehms
+ * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
+public class ShreyasTulsi extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the HarutoSuzuki class.
+     * Constructor for the ShreyasTulsi class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,11 +22,12 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public HarutoSuzuki(String f, String l, int r, int s) {
-        String firstName=f;
-        String lastName=l;
-        int mySeatX=r;
-        int mySeatY=s;
+    public ShreyasTulsi(String f, String l, int r, int s) {
+        firstName=f;
+        lastName=l;
+        mySeatX=r;
+        mySeatY=s;
+        
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -38,24 +39,21 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public HarutoSuzuki() {
-        firstName = "Haruto";
-        lastName = "Suzuki";
-        mySeatX = 9;
-        mySeatY = 9;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       // 60x60
+    public ShreyasTulsi() {
+        firstName="Shreyas";
+        lastName="Tulsi";
+        mySeatX=8;
+        mySeatY=9;
+       //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       // portraitFile="kilgoretrout.jpg";
-
-       //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-       // soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-       setImage(portraitFile);
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        setImage(portraitFile);
         sitting=true;
     }
     
      /**
-     * Act - do whatever the HarutoSuzuki actor wants to do. This method is called whenever
+     * Act - do whatever the ShreyasTulsi actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -64,10 +62,10 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(portraitFile);
+                setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
                 myHobby("I like to time travel!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
@@ -96,98 +94,32 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the HarutoSuzuki class used to animate the character once the image is clicked on.
+     * This is a local method specific to the ShreyasTulsi class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(2,3);
-        Greenfoot.delay(10);
-        setLocation(9,3);
-        Greenfoot.delay(10);
-        setLocation(3,3);
-        Greenfoot.delay(10);
-        setLocation(8,3);
-        Greenfoot.delay(10);
-        setLocation(5,3);
-        Greenfoot.delay(10);
-        setLocation(6,3);
-        
-        Greenfoot.delay(10);
-        setLocation(2,4);
-        Greenfoot.delay(10);
-        setLocation(9,4);
-        Greenfoot.delay(10);
-        setLocation(3,4);
-        Greenfoot.delay(10);
-        setLocation(8,4);
-        Greenfoot.delay(10);
-        setLocation(5,4);
-        Greenfoot.delay(10);
-        setLocation(6,4);
-        Greenfoot.delay(10);
-        
-        Greenfoot.delay(10);
-        setLocation(2,6);
-        Greenfoot.delay(10);
-        setLocation(9,6);
-        Greenfoot.delay(10);
-        setLocation(3,6);
-        Greenfoot.delay(10);
-        setLocation(8,6);
-        Greenfoot.delay(10);
-        setLocation(5,6);
-        Greenfoot.delay(10);
-        setLocation(6,6);
-        Greenfoot.delay(10);
-        
-        Greenfoot.delay(10);
-        setLocation(2,7);
-        Greenfoot.delay(10);
-        setLocation(9,7);
-        Greenfoot.delay(10);
-        setLocation(3,7);
-        Greenfoot.delay(10);
-        setLocation(8,7);
-        Greenfoot.delay(10);
-        setLocation(5,7);
-        Greenfoot.delay(10);
-        setLocation(6,7);
-        Greenfoot.delay(10);
-        
-        Greenfoot.delay(10);
-        setLocation(2,4);
-        Greenfoot.delay(10);
-        setLocation(9,4);
-        Greenfoot.delay(10);
-        setLocation(3,4);
-        Greenfoot.delay(10);
-        setLocation(8,4);
-        Greenfoot.delay(10);
-        setLocation(5,4);
-        Greenfoot.delay(10);
-        setLocation(6,4);
-        Greenfoot.delay(10);
-        
-        // move down
-        for (int i=3;i<=5;i++){
-            setLocation(1,i);
-            Greenfoot.delay(30);
-        }
+        setLocation(0,0);
+         Greenfoot.delay(10);
         // move right
-        for (int i=2;i<=7;i++){
-            setLocation(i,5);
-            Greenfoot.delay(30);
+        for (int i=1;i<=9;i++){
+            setLocation(i,0);
+            Greenfoot.delay(10);
+        }
+        // move back
+        for (int i=1;i<=5;i++){
+            setLocation(9,i);
+            Greenfoot.delay(10);
         }      
-         // move down
-        for (int i=6;i<=8;i++){
-            setLocation(7,i);
-            Greenfoot.delay(30);
-        }
          // move left
-        for (int i=6;i>=4;i--){
-            setLocation(i,8);
-            Greenfoot.delay(30);
-        }
+        for (int i=9;i>=0;i--){
+            setLocation(i,5);
+            Greenfoot.delay(10);
+        }      
+              // move Forward
+        for (int i=5;i>=0;i--){
+            setLocation(0,i);
+            Greenfoot.delay(10);
+        }   
            Greenfoot.delay(20);
            returnToSeat();
     }
