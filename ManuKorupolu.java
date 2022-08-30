@@ -131,37 +131,6 @@ public class ManuKorupolu extends Student implements SpecialInterestOrHobby
             Greenfoot.delay(s);
         } 
     }
-    /**
-     * This is a local method that moves the actor up, down, left, right, down, up, left, and right
-     * 
-     */
-    public void t36Met(int a, int b){
-        int s=3;
-        setRotation(getRotation()+90);
-        Greenfoot.delay(s);
-        setLocation(a+s, b);
-        Greenfoot.delay(s);
-        setLocation(a-s, b);
-        Greenfoot.delay(s);
-        setRotation(getRotation()+90);
-        Greenfoot.delay(s);
-        setLocation(a, b-s);
-        Greenfoot.delay(s);
-        setLocation(a, b+s);
-        Greenfoot.delay(s);
-        setRotation(getRotation()+90);
-        Greenfoot.delay(s);
-        setLocation(a-s, b);
-        Greenfoot.delay(s);
-        setLocation(a+s, b);
-        Greenfoot.delay(s);
-        setRotation(getRotation()+90);
-        Greenfoot.delay(s);
-        setLocation(a, b+s);
-        Greenfoot.delay(s);
-        setLocation(a, b-s);
-        Greenfoot.delay(s);
-    }
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer

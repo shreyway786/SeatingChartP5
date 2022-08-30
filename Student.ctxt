@@ -1,25 +1,22 @@
 #BlueJ class context
 comment0.target=Student
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Student\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=r
 comment1.target=void\ setSeatX(int)
 comment10.params=
 comment10.target=void\ sitDown()
 comment11.params=
 comment11.target=void\ assignSeat()
-<<<<<<< HEAD
-comment12.params=degrees\ increments
-comment12.target=void\ spinImage(int,\ int)
-comment12.text=The\ spin\ image\ method\ essentially\ chnages\ the\ location\ of\ the\ image.\ \r\n\ It\ first\ moves\ the\ image\ up\ 3\ spaces.\ After\ that,\ it\ will\ move\ it\ 3\ spaces\ \r\n\ to\ the\ left\ and\ then\ 3\ spaces\ to\ the\ right.\ After\ that\ it\ will\ move\ the\ \r\n\ center\ of\ the\ screen.\ While\ it\ is\ moving\ location,\ it\ is\ spinning\ to\ the\ \r\n\ right\ until\ the\ incrementation\ is\ done.\ \r\nBy\ Anit\ Annadi,\ Samyutha,\ Brandon,\ Vihaan*
-=======
->>>>>>> Haruto
+comment12.params=a\ b
+comment12.target=void\ t36Met(int,\ int)
+comment12.text=\n\ This\ is\ a\ local\ method\ that\ moves\ the\ actor\ up,\ down,\ left,\ right,\ down,\ up,\ left,\ and\ right\n\ \n
 comment2.params=s
 comment2.target=void\ setSeatY(int)
 comment3.params=
 comment3.target=void\ getName()
 comment4.params=
 comment4.target=int\ GetSeatX()
-comment4.text=\r\n\ Plays\ a\ sound\ file\ when\ called\r\n\ @param\ String\ myNameFile\ \ is\ the\ name\ of\ the\ sound\ file\ to\ play,\ ex\ "mySound.wav",\r\n
+comment4.text=\n\ Plays\ a\ sound\ file\ when\ called\n\ @param\ String\ myNameFile\ \ is\ the\ name\ of\ the\ sound\ file\ to\ play,\ ex\ "mySound.wav",\n
 comment5.params=
 comment5.target=int\ GetSeatY()
 comment6.params=
@@ -30,4 +27,4 @@ comment8.params=myNameFile
 comment8.target=void\ sayName(java.lang.String)
 comment9.params=
 comment9.target=void\ returnToSeat()
-numComments=12
+numComments=13
