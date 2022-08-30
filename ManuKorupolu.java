@@ -66,7 +66,7 @@ public class ManuKorupolu extends Student implements SpecialInterestOrHobby
           getName();
           sayName(soundFile);
             
-          myHobby("I love building scale models of murderous robots that repress the revolution of an underrepresented and oppressed group of people!");
+          myHobby("I love building scale models of murderous robots designed to repress the revolution of an underrepresented and oppressed group of people!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -78,6 +78,7 @@ public class ManuKorupolu extends Student implements SpecialInterestOrHobby
           for (int x=10;x>=0;x=x-2){
                 mgzMet(x,10-x);  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
             } 
+          t36Met(8,4);
           returnToSeat();
           sitDown();
             }
@@ -129,6 +130,37 @@ public class ManuKorupolu extends Student implements SpecialInterestOrHobby
             setLocation(a+0,b+i);
             Greenfoot.delay(s);
         } 
+    }
+    /**
+     * This is a local method that moves the actor up, down, left, right, down, up, left, and right
+     * 
+     */
+    public void t36Met(int a, int b){
+        int s=3;
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a+s, b);
+        Greenfoot.delay(s);
+        setLocation(a-s, b);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a, b-s);
+        Greenfoot.delay(s);
+        setLocation(a, b+s);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a-s, b);
+        Greenfoot.delay(s);
+        setLocation(a+s, b);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a, b+s);
+        Greenfoot.delay(s);
+        setLocation(a, b-s);
+        Greenfoot.delay(s);
     }
      /**
      * myHobby is one of the interfaces provided.  
