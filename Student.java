@@ -179,4 +179,16 @@ public abstract class Student extends Actor
         returnToSeat();
     }
     }
+    /** 
+     * rescales the actor to whatever dimensions you input
+     * @authors: Josh Frendberg, Soha Ahmad, Sanjana Alluri, Yanin Charoenpornsawat 
+     * @version 2.0  8/30/22 
+     * @param x takes in width of rescaled image
+     * @param y takes in height of rescaled image
+       **/
+    public void rescale(int x, int y){
+        GreenfootImage image = getImage();  
+        image.scale(x, y);
+        setImage(image);
+    }
 }
