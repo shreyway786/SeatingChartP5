@@ -3,8 +3,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * The TeacherDesk was converted into a method that adds seats upon a new student
- * arriving or the teacher wanting to replan the classroom. Whenever the user presses  
- * down the n key. The seats can continue to be added until an entire column fills up.
+ * arriving or the teacher wanting to replan the classroom. The user can add desks  
+ * whenever they press down the n key. The user gives the coordinates of where
+ * they would like the desks to be placed.
  * @author
  * @version 8/29/2022
  * Coded by Michael Wang, Jeia So, Aaryan Sinha, Sanjay Veeraraghavan
