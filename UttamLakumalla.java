@@ -71,8 +71,8 @@ public class UttamLakumalla extends Student implements SpecialInterestOrHobby
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+                circleClass(); // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                t36Met(8,4);
                 sitDown();
             }
         
@@ -84,13 +84,6 @@ public class UttamLakumalla extends Student implements SpecialInterestOrHobby
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
     }
-    /**
-     * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
-     */
-
    
     /**
      * This is a local method specific to the UttamLakumalla class used to animate the character once the image is clicked on.
