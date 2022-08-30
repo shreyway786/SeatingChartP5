@@ -152,7 +152,7 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        
+
         HarutoSuzuki haruto = new HarutoSuzuki();
         addObject(haruto,9,9);
         haruto.assignSeat();
@@ -162,36 +162,19 @@ public class Classroom extends World
         anitannadi.assignSeat();
         
         RichardWu richardwu = new RichardWu();
-        putObject(richardwu,richardwu.mySeatX,richardwu.mySeatY);
+        addObject(richardwu,richardwu.mySeatX,richardwu.mySeatY);
         richardwu.assignSeat();
 
         UttaraRai uttararai = new UttaraRai();
         addObject(uttararai,9,7);
         uttararai.assignSeat();
+
     }
     
     public List<Student> getAllStudents(){
        List<Student> s = getObjects(Student.class);  
        return s;
     }
-    public void putObject(Student student, int x, int y){
-        int x_amt = 1;
-        if (x == 3 | x == 4) {
-            x_amt ++ ;
-        }
-        if (x == 5 | x == 6) {
-            x_amt = x_amt + 2 ;
-        }
-        int y_amt = 2;
-        if (y == 3 | y == 4) {
-            y_amt ++;
-        }
-        if (y == 5 | y == 6) {
-            y_amt = y_amt + 2;
-        }
-        addObject(student, x+x_amt, y+y_amt);
-    }
-    
     
   
     /**

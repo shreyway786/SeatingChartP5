@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=StudentDeskGroup
+comment0.text=\r\n\ The\ StudentDeskGroup\ was\ converted\ into\ a\ method\ that\ adds\ a\ seat\ upon\ a\ new\ student\ arriving.\ This\ triggers\r\n\ whenever\ the\ user\ presses\ down\ the\ n\ key.\ The\ seats\ can\ continue\ to\ be\ added\ until\ an\ entire\ column\ fills\ up.\r\n\ @author\ \r\n\ @version\ 8/29/2022\r\n\ Coded\ by\ Michael\ Wang,\ Jeia\ So,\ Aaryan\ Sinha,\ Sanjay\ Veeraraghavan\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2
