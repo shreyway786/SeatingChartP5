@@ -97,7 +97,7 @@ public class RichardWu extends Student implements SpecialInterestOrHobby
 
     }
      /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
+     * Act - do whatever the RichardWu actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -139,10 +139,12 @@ public class RichardWu extends Student implements SpecialInterestOrHobby
      * classes, make sure to fully document so other students can use the same interface.
      */
 
-   
+    public void sp() {
+        sendProjectiles(3);
+    }
     /**
-     * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+     * This is the bounce method which allows an image of the standing user to randomly move and 
+     * turn direction, stopping after 6- iterations. It will also call the student method sendProjectiles (which I created) randomly
      */
     public void bounce(){
         Integer add_rotation = 20;
@@ -152,11 +154,14 @@ public class RichardWu extends Student implements SpecialInterestOrHobby
         Integer y = 0;
         // move right
         for (int i=1;i<=60;i++){
+            
             if(Greenfoot.getRandomNumber(10) == 1) {
                 turn(add_rotation);
+                sendProjectiles(3);
             }
             else if (Greenfoot.getRandomNumber(15) == 1) {
                 turn(-add_rotation);
+                sendProjectiles(3);
             }
             x = getX();
             y = getY();

@@ -69,5 +69,21 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+    
+    /**
+        * creates specified number of projectiles at the coordinate of the student, 
+        * to be fired after student returns to seat
+        *
+        * @authors Richard Wu's group
+        * @param  num, number of projectiles sent at once
+        * @return      void
+        
+    */
+    public void sendProjectiles(int num) {
+        for (int i=0; i< num; i++) {
+            Projectile proj = new Projectile((360/(i+1)));
+            getWorld().addObject(proj,getX(),getY());
+        }
+    }
  
 }
