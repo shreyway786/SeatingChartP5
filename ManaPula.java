@@ -44,7 +44,7 @@ public class ManaPula extends Student implements SpecialInterestOrHobby
         mySeatX=8;
         mySeatY=7;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile = "kilgoretrout.jpg";
+       portraitFile = "manapula.jpg";
        //portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
