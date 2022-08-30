@@ -191,4 +191,22 @@ public abstract class Student extends Actor
         image.scale(x, y);
         setImage(image);
     }
+    /** This method zooms in into a student picture and then zooms out of the student picture gradually. It takes in user inputs and performs the action for a certain amount of time. Developed by Sid, Samarth, Diego, and Brandon. **/
+    public void zoomIn(int x, int y, int increments) {
+        for (int i = 0; i<=increments; i++) {
+            int firstHalf = increments/2;
+            
+            if (i <= firstHalf) {
+                x = x + 10;
+                y = y + 10;
+                getImage().scale(x, y);
+                Greenfoot.delay(10);
+            } else {
+                x = x -10;
+                y = y -10;
+                getImage().scale(x,y);
+                Greenfoot.delay(10);
+            }
+        }
+        
 }
