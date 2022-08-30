@@ -7,9 +7,12 @@ comment10.params=
 comment10.target=void\ sitDown()
 comment11.params=
 comment11.target=void\ assignSeat()
+<<<<<<< HEAD
 comment12.params=degrees\ increments
 comment12.target=void\ spinImage(int,\ int)
 comment12.text=The\ spin\ image\ method\ essentially\ chnages\ the\ location\ of\ the\ image.\ \r\n\ It\ first\ moves\ the\ image\ up\ 3\ spaces.\ After\ that,\ it\ will\ move\ it\ 3\ spaces\ \r\n\ to\ the\ left\ and\ then\ 3\ spaces\ to\ the\ right.\ After\ that\ it\ will\ move\ the\ \r\n\ center\ of\ the\ screen.\ While\ it\ is\ moving\ location,\ it\ is\ spinning\ to\ the\ \r\n\ right\ until\ the\ incrementation\ is\ done.\ \r\nBy\ Anit\ Annadi,\ Samyutha,\ Brandon,\ Vihaan*
+=======
+>>>>>>> Haruto
 comment2.params=s
 comment2.target=void\ setSeatY(int)
 comment3.params=
@@ -27,4 +30,4 @@ comment8.params=myNameFile
 comment8.target=void\ sayName(java.lang.String)
 comment9.params=
 comment9.target=void\ returnToSeat()
-numComments=13
+numComments=12

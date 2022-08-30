@@ -29,7 +29,7 @@ public class MichaelWang extends Student implements SpecialInterestOrHobby
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        readingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-reading.jpg";
+        //readingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-reading.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -43,7 +43,7 @@ public class MichaelWang extends Student implements SpecialInterestOrHobby
         System.out.println("My name is " + firstName + " " + lastName);
     }  
     public void Read(){
-        setImage(readingFile);
+        //setImage(readingFile);
         Greenfoot.delay(150);
         setImage(standingFile);
     }  
@@ -55,7 +55,7 @@ public class MichaelWang extends Student implements SpecialInterestOrHobby
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        readingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-reading.jpg";
+        //readingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-reading.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
