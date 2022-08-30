@@ -142,5 +142,41 @@ public abstract class Student extends Actor
         returnToSeat(); //return to seat
         
     }
+    /**
+     * Table Members : Srish, Mahathi, Rishav, Maya
+     * Image travels diagonally from the top right to bottom left and top left to bottom right 
+     * creating an X while spinning in a circle
+     */
+    public void spinAndExpand(){
+        setLocation(0,0);
+        int x = 10;
+        for (int i = 1; i<=8;i++){
+            // starts at top right
+            setLocation(x,i);
+            // spins in circle while traveling to bottom left
+            for (int j=1;j<=12;j++){
+            setRotation(30+30*j);
+            Greenfoot.delay(3);
+            }
+            x--;
+        }
+        for (int i = 1; i<=8;i++){
+            // starts at top left
+            setLocation(x,i);
+            // spins in circles while traveling to bottom right
+            for (int j=1;j<=12;j++){
+            setRotation(30+30*j);
+            Greenfoot.delay(3);
+            }
+            x++;
+        }
+        // rotation set back to 0 and returned to original seat
+        setRotation(0);
+        returnToSeat();
+        GreenfootImage file = getImage();
+        file.scale(300, 200);
+        Greenfoot.delay(20);
+        returnToSeat();
+    }
     }
 }
