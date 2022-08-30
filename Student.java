@@ -21,6 +21,7 @@ public abstract class Student extends Actor
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
+   public String winFile;
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
    public void setSeatX(int r){
@@ -69,38 +70,17 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
- //The spin image method essentially chnages the location of the image. 
- //It first moves the image up 3 spaces. After that, it will move it 3 spaces 
- //to the left and then 3 spaces to the right. After that it will move the 
- //center of the screen. While it is moving location, it is spinning to the 
- //right until the incrementation is done. 
- //By Anit Annadi, Samyutha, Brandon, Vihaan
-    public void spinImage(int degrees, int increments){
-        int spin=degrees/increments;
-        int addX = 3;
-        int addY = 0;
-        boolean moveImage = true;
-        for (int i=0; i<=increments; i++){
-            getImage().rotate(spin);
-            Greenfoot.delay(10);
-            if (i == 1) {
-                addX=0;
-                addY=3;
-            } else if (i==2){
-                addX=-3;
-                addY=0;
-            } else if (i==3){
-                addX=0;
-                addY=-3;
-            } else if (i>3) {
-                moveImage = false;
-                setLocation(6,7);
-            }
-            
-            if (moveImage) {
-                    setLocation(GetSeatX() + addX,GetSeatY() + addY);
-            }
-            Greenfoot.delay(5);
-        }
+    
+    /** 
+     * rescales the actor to whatever dimensions you input
+     * @authors: Josh Frendberg, Soha Ahmad, Yanin Charoenpornsawat, Sanjana Alluri
+     * @param x horizontal dimension (pixels) of rescaled image
+     * @param y vertical dimension (pixels) of rescaled image
+     * @version 1.0    **/
+    public void rescale(int x, int y){
+        GreenfootImage image = getImage();  
+        image.scale(x, y);
+        setImage(image);
     }
+ 
 }
