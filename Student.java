@@ -103,6 +103,7 @@ public abstract class Student extends Actor
             }
             Greenfoot.delay(5);
         }
+    }
       /**This method is to develop a short animation that goes around in circles and rotate whilst doing so. 
        The method takes no parameters. 
        Developed by Pranav Pabbisetty, Pranav Palagummi, Manasvi Pula, Uttara Rai*/
@@ -144,6 +145,21 @@ public abstract class Student extends Actor
         
     }
     /**
+        * creates specified number of projectiles at the coordinate of the student,
+        * to be fired after student returns to seat
+        *
+        * authors: Richard Wu's group
+        * @param  num, number of projectiles sent at once
+        * @return      void
+
+    */
+    public void sendProjectiles(int num) {
+        for (int i=0; i< num; i++) {
+            Projectile proj = new Projectile((360/(i+1)));
+            getWorld().addObject(proj,getX(),getY());
+        }
+    }
+    /**
      * Table Members : Srish, Mahathi, Rishav, Maya
      * Image travels diagonally from the top right to bottom left and top left to bottom right 
      * creating an X while spinning in a circle
@@ -179,7 +195,7 @@ public abstract class Student extends Actor
         Greenfoot.delay(20);
         returnToSeat();
     }
-    }
+    
     /** 
      * rescales the actor to whatever dimensions you input
      * @authors: Josh Frendberg, Soha Ahmad, Sanjana Alluri, Yanin Charoenpornsawat 
@@ -209,6 +225,7 @@ public abstract class Student extends Actor
                 Greenfoot.delay(10);
             }
         }
+    }
         /**
      * This is a local method that moves the actor up, down, left, right, down, up, left, and right
      * 
@@ -240,5 +257,6 @@ public abstract class Student extends Actor
         setLocation(a, b-s);
         Greenfoot.delay(s);
     }
+
         
 }
