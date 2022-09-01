@@ -49,7 +49,7 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
        // portraitFile="kilgoretrout.jpg";
 
        //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-       // soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
        setImage(portraitFile);
         sitting=true;
     }
@@ -67,9 +67,9 @@ public class HarutoSuzuki extends Student implements SpecialInterestOrHobby
                 setImage(portraitFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play tennis!!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
