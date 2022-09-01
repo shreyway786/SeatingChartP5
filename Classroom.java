@@ -172,6 +172,10 @@ public class Classroom extends World
         JoshFrendberg joshfrendberg = new JoshFrendberg();
         addObject(joshfrendberg,3,4);
         joshfrendberg.assignSeat();
+        
+        SohaAhmad sohaahmad = new SohaAhmad();
+        addObject(sohaahmad,2,3);
+        sohaahmad.assignSeat(); 
 
     }
     
