@@ -168,6 +168,10 @@ public class Classroom extends World
         UttaraRai uttararai = new UttaraRai();
         addObject(uttararai,9,7);
         uttararai.assignSeat();
+        
+        JoshFrendberg joshfrendberg = new JoshFrendberg();
+        addObject(joshfrendberg,3,4);
+        joshfrendberg.assignSeat();
 
     }
     
