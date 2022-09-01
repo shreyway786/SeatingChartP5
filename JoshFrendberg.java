@@ -45,9 +45,9 @@ public class JoshFrendberg extends Student implements StudentAthlete
         mySeatX=3;
         mySeatY=4;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png"; //-standing
-       // soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg"; //-standing
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -75,7 +75,7 @@ public class JoshFrendberg extends Student implements StudentAthlete
                 setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
                 mySport("I play ice hockey");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
