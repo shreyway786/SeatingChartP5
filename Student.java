@@ -22,6 +22,7 @@ public abstract class Student extends Actor
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
    public String goingFile; // image used when going back to seat
+   public String winFile; // image used at the end before being seated
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
    public void setSeatX(int r){
