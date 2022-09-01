@@ -68,12 +68,12 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(portraitFile);
+                setImage(img);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 //sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to work out!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -105,29 +105,19 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
      */
     public void circleClass(){
         setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
+        for (int i=0; i<=15; i++) {
+            int random_x = (int)Math.floor(Math.random()*(6)+2);
+            int random_y = (int)Math.floor(Math.random()*(6)+3);
+            setLocation(random_x,random_y);
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
+         Greenfoot.delay(10);
+        
            returnToSeat();
+    }
+    
+    public void myMethod(){
+        
     }
      /**
      * myHobby is one of the interfaces provided.  
