@@ -165,13 +165,17 @@ public class RichardWu extends Student implements SpecialInterestOrHobby
             }
             x = getX();
             y = getY();
+            if (i % 6 == 0) {
+                //System.out.println(String.format("%s %s",x,y));
+            }
             //System.out.print(String.format("x: %s",getY()));
-            if (!(x > 12) && !(x < 1) && !(y < 0) && !(y > 11) ){
-                move(2);
+            //if (!(x > 11) && !(x < 1) && !(y < 0) && !(y > 10) ){
+            if ((x < 11) && (x > 1) && (y > 1) && (y < 11)){
+                move(1);
             }
             else {
-                turn(90);
-                move(1);
+                turn(120);
+                move(3);
             }
             Greenfoot.delay(10);
         } 
