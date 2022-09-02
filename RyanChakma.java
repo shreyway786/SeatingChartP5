@@ -65,18 +65,21 @@ public class RyanChakma extends Student implements SpecialInterestOrHobby
           //  if (sitting){
                 sitting=false;
                 setImage(standingFile);
-                System.out.println(""); // Print a blank line to create space between any student output.
+                System.out.println(""); // Print a blank line to create spkiace between any student output.
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to have fun!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+                circleClass();
+                // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                t36Met(8,3);
+                returnToSeat();
                 sitDown();
+                setImage(img);
             }
         
     } 
@@ -122,9 +125,38 @@ public class RyanChakma extends Student implements SpecialInterestOrHobby
             setLocation(0,i);
             Greenfoot.delay(10);
         }   
-           Greenfoot.delay(20);
-           returnToSeat();
+         Greenfoot.delay(20);
+
+    
     }
+    public void t36Met(int a, int b){
+        int s=3;
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a+s, b);
+        Greenfoot.delay(s);
+        setLocation(a-s, b);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a, b-s);
+        Greenfoot.delay(s);
+        setLocation(a, b+s);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a-s, b);
+        Greenfoot.delay(s);
+        setLocation(a+s, b);
+        Greenfoot.delay(s);
+        setRotation(getRotation()+90);
+        Greenfoot.delay(s);
+        setLocation(a, b+s);
+        Greenfoot.delay(s);
+        setLocation(a, b-s);
+        Greenfoot.delay(s);
+    }
+
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
