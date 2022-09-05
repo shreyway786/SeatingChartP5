@@ -31,7 +31,6 @@ public class UttaraRai extends Student implements SpecialInterestOrHobby
         //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
-        sitting=true;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -50,7 +49,6 @@ public class UttaraRai extends Student implements SpecialInterestOrHobby
         //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(myImage);
-        sitting=true;
     }
     
      /**
@@ -61,17 +59,15 @@ public class UttaraRai extends Student implements SpecialInterestOrHobby
     {
         // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
+            setImage(portraitFile);
             getName();
             sayName(soundFile);
+            myHobby("I like to make art!");
             System.out.println("");
-            myHobby("I like to do make art!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
-            
-
-            rotateClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+            rotate();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
             sitDown();
             }
         
@@ -95,20 +91,63 @@ public class UttaraRai extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the UttaraRai class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void rotateClass(){
-        int centerX = 100;
-        int centerY = 100;
-        int radius = 50;
-        int rotation = 20;
-        int turnSpeed = 100;
-        // in act
-        //setLocation(centerX, centerY);
-        setRotation(rotation);
-        turn(turnSpeed);
-        rotation = getRotation();
-        move(radius);
-        setRotation(0);
+    public void rotate(){
+        int ypos = 7;
+        int xpos = 7;
+        setLocation(xpos,ypos);
+        Greenfoot.delay(10);
+        int count= 0;
+        while (count < 5){
+            xpos++;
+            ypos++;
+            setLocation(xpos, ypos);
+            Greenfoot.delay(10);
+            count++;
+        }
+        ypos = 7;
+        xpos = 7;
+        setLocation(xpos,ypos);
+        Greenfoot.delay(10);
+        count= 0;
+        while (count < 5){
+            xpos--;
+            ypos++;
+            setLocation(xpos, ypos);
+            Greenfoot.delay(10);
+            count++;
+        }
+        ypos = 7;
+        xpos = 7;
+        setLocation(xpos,ypos);
+        Greenfoot.delay(10);
+        count= 0;
+        while (count < 5){
+            xpos--;
+            ypos--;
+            setLocation(xpos, ypos);
+            Greenfoot.delay(10);
+            count++;
+        }
+        ypos = 7;
+        xpos = 7;
+        setLocation(xpos,ypos);
+        Greenfoot.delay(10);
+        count= 0;
+        while (count < 5){
+            xpos++;
+            ypos--;
+            setLocation(xpos, ypos);
+            Greenfoot.delay(10);
+            count++;
+        }
     }
+    
+    public void sitDown(){
+        returnToSeat();
+        setImage(myImage);
+        myImage.scale(60, 60);
+    }
+    
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
