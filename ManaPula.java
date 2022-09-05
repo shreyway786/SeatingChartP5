@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
  * The ManaPula class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
@@ -47,7 +48,7 @@ public class ManaPula extends Student implements SpecialInterestOrHobby
        portraitFile = "manapula.jpg";
        //portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        soundFile= "manapula.wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -65,14 +66,14 @@ public class ManaPula extends Student implements SpecialInterestOrHobby
                 //setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
-                myHobby("I like to irritate my friends till they die.");
+                myHobby("I like to bake, go on hikes, and play the ukulele");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                manaClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -97,33 +98,82 @@ public class ManaPula extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the ManaPula class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+    public void manaClass(){
+        Greenfoot.delay(10);
+        GreenfootImage image = getImage();
+        setImage(image);
+        
+        int transparency = 255;
+        
         setLocation(2,2);
-         Greenfoot.delay(1);
-         
-        for (int j=1;j<=4;j++){
-            for (int i=2;i<=10;i++){
-                setLocation(i,2);
-                Greenfoot.delay(5);
-            }
-        // move back
-            for (int i=2;i<=11;i++){
-                setLocation(10,i);
-                Greenfoot.delay(4);
-            }      
-         // move left
-            for (int i=10;i>=1;i--){
-                setLocation(i,11);
-                Greenfoot.delay(2);
-            }      
-              // move Forward
-            for (int i=10;i>=1;i--){
-                setLocation(1,i);
-                Greenfoot.delay(1);
-            }
-            
+
+        for (int i=1;i<=10;i++){
+            setLocation(i,2);
+            Greenfoot.delay(2);
         }
-           Greenfoot.delay(20);
+        for (int i=2;i<6;i++){
+            setLocation(10,i);
+            Greenfoot.delay(1);
+        }
+        for (int i=10;i>=1;i--){
+            setLocation(i,5);
+            Greenfoot.delay(2);
+        }
+        for (int i=5;i<9;i++){
+            setLocation(1,i);
+            Greenfoot.delay(2);
+        }
+        for (int i=1;i<=10;i++){
+            setLocation(i,8);
+            Greenfoot.delay(2);
+        }
+        for (int i=8;i<12;i++){
+            setLocation(10,i);
+            Greenfoot.delay(2);
+        }
+        for (int i=10;i>=1;i--){
+            setLocation(i,11);
+            Greenfoot.delay(2);
+        }
+        
+        
+        for (int j=1;j<=8;j++){
+            setLocation(Greenfoot.getRandomNumber(12),Greenfoot.getRandomNumber(12));
+            for (int i=1;i<=16;i++){ 
+            transparency = transparency-15;
+            image.setTransparency(transparency);
+            Greenfoot.delay(2);
+            }
+            image.setTransparency(0);
+            for (int i=1;i<=16;i++){ 
+            transparency = transparency+15;
+            image.setTransparency(transparency);
+            Greenfoot.delay(2);
+            }
+            image.setTransparency(255);
+            turn(90);
+        }
+        
+        setLocation(6,6);
+        image.setTransparency(255);
+        Greenfoot.delay(1);
+        
+        for (int j=1;j<=14;j++){
+            for (int i=1;i<=5;i++){ 
+              image.scale(50+(i*50),50+(i*50));
+              turn(5);
+              Greenfoot.delay(1);
+            }
+            image.scale(image.getWidth()+10, image.getHeight()+10);
+            
+            for (int i=1;i<=5;i++){ 
+              image.scale(image.getWidth()-(50), image.getHeight()-(50));
+              turn(5);
+              Greenfoot.delay(1);
+            }
+            turn(1);
+        }
+           Greenfoot.delay(1);
            returnToSeat();
     }
      /**
@@ -136,3 +186,4 @@ public class ManaPula extends Student implements SpecialInterestOrHobby
 }
 
 }
+
