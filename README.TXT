@@ -1,4 +1,3 @@
-﻿
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
@@ -25,7 +24,7 @@ NOTE: Each class build-master should fork the main repo to a new repo before sta
 
 3) Clone (first time, each class build-master should fork, so that each class has their own copy) the repository into the directory where git bash is pointing:
 
-    git clone https://github.com/DHS-CP/GreenfootSeatingChartMaster2021-22.git  (this will change based on fork created by build-master(s).
+    git clone  (reference the link provided for the branch)).
 
 NOTE: This should set up all initial conditions for GIT and avoid a lot of confusion.
 
@@ -35,6 +34,9 @@ NOTE: This should set up all initial conditions for GIT and avoid a lot of confu
 
 PLEASE DO NOT COMMIT YOUR FILES IF THEY DO NOT COMPILE LOCALLY!!!!! Work with your build master! I will provide the current
 version of the seating chart in Canvas, so that you know where you should be seated.
+
+THERE ARE TWO WAYS TO COMMIT FILES TO THE GIT!
+OPTION 1 (COMMAND LINE):
 =====================================================================
 
 git add FirstLast.java
@@ -54,7 +56,41 @@ git commit -m “adding my files to the repository”
 8) Push your changes to the remote repository (each period should have their own cloned or branched version to work with.
 Do not commit back to the master repo:
 
-git push
+git push 
+=====================================================================
+
+OPTION 2 (DIRECT THROUGH GIT):
+
+1) Look at the right most side of the screen and click on the "Add File" drop down
+        - Click upload file and you will be directed to a new screen
+        
+2) Click on the blue hyperlink labled "choose your files"
+
+3) Add the file labled "LastnameFirstname.class" within your “GreenfootSeatingChartMasterP52022-2023” folder  (this is all in the master branch regarding to github)
+
+4) Once the file has loaded, simply scroll down and click the green button labled “Commit changes”
+
+5) Next, return back to the home page for the repository (you will be able to see all the files and folders added to this repository as well as this readme if you scroll to the bottom)
+
+6) Click on the “images” folder
+
+7) Repeat steps 1 and 2 (from the DIRECT THROUGH GIT)
+
+8) Add the files within your “GreenfootSeatingChartMasterP52022-2023” folder and apply the images which apply to YOUR CODE ONLY (i.e “LastnameFirstname-standing.jpg” NOT “kilgoretrout.jpg”)
+
+9) Repeat step 4
+
+10) Repeat step 5
+
+11) Click on the “sounds” folder
+
+12) Repeat steps 1 and 2 (from the DIRECT THROUGH GIT)
+
+13) Add the files within your “GreenfootSeatingChartMasterP52022-2023” folder and apply the sounds which apply to YOUR CODE ONLY (i.e “LastnameFirstname.wav” NOT “kilgoretrout.wav”)
+
+14) Repeat step 4
+
+=====================================================================
 
 
 ASSIGNMENT INSTRUCTIONS IN BRIEF
@@ -77,7 +113,3 @@ and update the master repository.  Access rights can be assigned to groups, and 
 (Google "popular GIT workflows).  We will discuss some in class.
 
 See the Canvas instructions for a complete set of requirements for this year's project.
-
-
-
-

@@ -125,6 +125,10 @@ public class MahathiPothukuchi extends Student implements SpecialInterestOrHobby
     public void crossClass(){
         setLocation(0,0);
          Greenfoot.delay(10);
+         for (int i=1;i<=9;i++){
+            setLocation(i,0);
+            Greenfoot.delay(10);
+        }
         // move diagonal right
         for (int i=1;i<=6;i++){
             setLocation(2*i,2*i);
@@ -143,16 +147,7 @@ public class MahathiPothukuchi extends Student implements SpecialInterestOrHobby
         setRotation(0);
         returnToSeat();
         Greenfoot.delay(65);
-        sayName("mahathipothukuchicoffeemusic.wav");
-        portraitFile = "mahathipothukuchicoffee.jpg";
-        setImage(portraitFile);
-        for (int j=1;j<=12;j++){
-            GreenfootImage file = getImage();
-            file.scale(150 + j, 107 +j);
-            Greenfoot.delay(20);
-            }
-        portraitFile = "mahathipothukuchi.jpg";
-        setImage(portraitFile);
+        
         returnToSeat();
     }
      /**
