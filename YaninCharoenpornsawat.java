@@ -108,7 +108,6 @@ public class YaninCharoenpornsawat extends Student implements SpecialInterestOrH
             for (int x = 1; x <= 12; ++x) {
                 getImage().rotate(90);
                 setLocation(x,x);
-                System.out.println(x);
                 Greenfoot.delay(10);
             }            
         }
