@@ -97,35 +97,35 @@ public class YaninCharoenpornsawat extends Student implements SpecialInterestOrH
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
+        GreenfootImage image = getImage();  
+        image.scale(100,100);
+        setImage(image);
+        
         setLocation(0,0);
-         Greenfoot.delay(10);
-         
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            getImage().rotate(90);
-            Greenfoot.delay(10);
+        Greenfoot.delay(10);
+        for (int i = 1; i < 2; ++i) {
+            
+            for (int x = 1; x <= 12; ++x) {
+                getImage().rotate(90);
+                setLocation(x,x);
+                System.out.println(x);
+                Greenfoot.delay(10);
+            }            
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            getImage().rotate(90);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            getImage().rotate(90);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            getImage().rotate(90);
+        
+        for (int i=10;i>1;i--){
+            setLocation(12,12);
+            setLocation(12,i);
             Greenfoot.delay(10);
         }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        
+        for (int i=10;i>1;i--){
+            setLocation(12,1);
+            setLocation(i,1);
+            Greenfoot.delay(10);
+        }   
+        Greenfoot.delay(20);
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
