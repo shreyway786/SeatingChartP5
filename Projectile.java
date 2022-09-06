@@ -2,34 +2,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Projectile here.
- *
- * @author (Richard Wu)
- * @version (final)
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Projectile extends RichardWu
+public class Projectile extends Actor
 {
-    private int timer;
-
-    public Projectile(int direction) {
-        setRotation(direction);
-    }
-     /**
+    /**
      * Act - do whatever the Projectile wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Projectile(int direction) {
+        setRotation(direction);
+    }
+
     public void act()
     {
         //System.out.println("alll");
-        int x = getX();
-        int y = getY();
-        if (!((x < 13) && (x > 0) && (y > 0) && (y < 13))){
-            timer ++;
-            if (timer > 3)
-            getWorld().removeObject(this);
-
-        } else {
-             move(1);
-        }
+        move(1);
     }
-
+    
 }
