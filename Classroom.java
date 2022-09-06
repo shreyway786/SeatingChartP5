@@ -169,6 +169,11 @@ public class Classroom extends World
         addObject(uttararai,9,7);
         uttararai.assignSeat();
         
+        PranavPalagummi pranavpalagummi = new PranavPalagummi();
+        addObject(pranavpalagummi,8,6)
+        pranavpalagummi.assignSeat();
+        
+        
         PranavPabbisetty pranavpabbisetty = new PranavPabbisetty();
         addObject(pranavpabbisetty,9,6)
         pranavpabbisetty.assignSeat();
