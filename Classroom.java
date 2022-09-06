@@ -233,6 +233,10 @@ public class Classroom extends World
         RishavNair rishavnair = new RishavNair();
         addObject(rishavnair,6,6);
         rishavnair.assignSeat();
+        
+        BrandonHuynh brandonhuynh = new BrandonHuynh();
+        addObject(brandonhuynh,5,4);
+        brandonhuynh.assignSeat();
 
     }
     
