@@ -184,6 +184,10 @@ public class Classroom extends World
         UttamLakumalla uttamlakumalla = new UttamLakumalla();
         addObject(uttamlakumalla,9,4);
         uttamlakumalla.assignSeat();
+        
+        EmilWilson emilwilson = new EmilWilson();
+        addObject(emilwilson, 8, 10);
+        emilwilson.assignSeat();
 
     }
     
