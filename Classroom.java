@@ -192,6 +192,10 @@ public class Classroom extends World
         SiddharthaMangamuri siddharthamangamuri = new SiddharthaMangamuri();
         addObject(siddharthamangamuri, 3, 6);
         siddharthamangamuri.assignSeat();
+        
+        JeiaSo jeiaso = new JeiaSo();
+        addObject(jeiaso,5,9);
+        jeiaso.assignSeat();
 
     }
     
