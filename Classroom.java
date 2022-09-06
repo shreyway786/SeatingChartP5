@@ -196,6 +196,10 @@ public class Classroom extends World
         JeiaSo jeiaso = new JeiaSo();
         addObject(jeiaso,5,9);
         jeiaso.assignSeat();
+        
+        SanjayVeeraraghavan sanjayveeraraghavan = new SanjayVeeraraghavan();
+        addObject(sanjayveeraraghavan,5,10);
+        sanjayveeraraghavan.assignSeat();
 
     }
     
