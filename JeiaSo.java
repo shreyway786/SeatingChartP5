@@ -77,7 +77,7 @@ public class JeiaSo extends Student implements StudentLeadership
            
                 sitDown();
                 
-                //spin(4);
+                spin();
                 
                 resizeImage();
                 
@@ -147,6 +147,14 @@ public class JeiaSo extends Student implements StudentLeadership
         setImage(firstName.toLowerCase()+ lastName.toLowerCase()+"4.jpg");
         Greenfoot.delay(10);
         setImage(portraitFile); // resets back to original size
+    }
+    
+    public void spin(){
+        for (int i = 1; i<=4; i++) {
+            setRotation(getRotation() + 90);
+            Greenfoot.delay(10);
+        }
+        setRotation(0);
     }
     
     /**
