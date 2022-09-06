@@ -50,7 +50,7 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        //soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         img = new GreenfootImage(portraitFile);
         img.scale(60, 60);
         img.rotate(90);
@@ -71,7 +71,7 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
                 setImage(img);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
                 myHobby("I like to work out!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
@@ -104,16 +104,31 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
         for (int i=0; i<=15; i++) {
             int random_x = (int)Math.floor(Math.random()*(6)+2);
-            int random_y = (int)Math.floor(Math.random()*(6)+3);
+            int random_y = (int)Math.floor(Math.random()*(8)+3);
             setLocation(random_x,random_y);
             Greenfoot.delay(10);
         }
-         Greenfoot.delay(10);
+            setLocation(6,5);
+            Greenfoot.delay(10);
         
-           returnToSeat();
+        for (int i=0; i<=18; i++) {
+            getImage().rotate(20);
+            getImage().scale(getImage().getWidth() + 30, getImage().getHeight() + 30);
+            Greenfoot.delay(10);
+        }
+        
+        for (int i=0; i<=18; i++) {
+            getImage().rotate(-20);
+            getImage().scale(getImage().getWidth() - 30, getImage().getHeight() - 30);
+            Greenfoot.delay(10);
+        }
+            
+        
+            Greenfoot.delay(10);
+        
+            returnToSeat();
     }
     
     public void myMethod(){
