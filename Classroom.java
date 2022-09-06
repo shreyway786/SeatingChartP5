@@ -188,6 +188,10 @@ public class Classroom extends World
         EmilWilson emilwilson = new EmilWilson();
         addObject(emilwilson, 8, 10);
         emilwilson.assignSeat();
+        
+        SiddharthaMangamuri siddharthamangamuri = new SiddharthaMangamuri();
+        addObject(siddharthamangamuri, 3, 6);
+        siddharthamangamuri.assignSeat();
 
     }
     
