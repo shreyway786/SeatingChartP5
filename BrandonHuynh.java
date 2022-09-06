@@ -81,6 +81,9 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
                 circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
+                setImage(img);
+                getImage().scale(60,60);
+                Greenfoot.delay(10);
             }
         
     } 
@@ -128,7 +131,11 @@ public class BrandonHuynh extends Student implements SpecialInterestOrHobby
         
             Greenfoot.delay(10);
         
+            
+            
             returnToSeat();
+            setImage(img);
+            Greenfoot.delay(10);
     }
     
     public void myMethod(){
