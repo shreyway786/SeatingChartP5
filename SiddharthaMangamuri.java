@@ -17,14 +17,14 @@ public class SiddharthaMangamuri extends Student implements SpecialInterestOrHob
      directory, and it just used code to call it and then set the starting image as the portrait file. Also put the
      boolean variable, sitting, to true. 
      */
-    public SiddharthaMangamuri(String f, String l, int r, int s) {
-        firstName=f;
-        lastName=l;
-        mySeatX=r;
-        mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // starting picture
+    public SiddharthaMangamuri() {
+        firstName="Siddhartha";
+        lastName="Mangamuri";
+        mySeatX=3;
+        mySeatY=6;
+        portraitFile=firstName.toLowerCase()+lastName.toLowerCase()+".jpg";    // starting picture
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg"; // standing picture
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // sound file
+        soundFile=firstName.toLowerCase()+lastName.toLowerCase()+".wav";  // sound file
         setImage(portraitFile);
         sitting=true;
     }
