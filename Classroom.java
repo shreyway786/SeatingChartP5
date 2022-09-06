@@ -200,6 +200,10 @@ public class Classroom extends World
         SanjayVeeraraghavan sanjayveeraraghavan = new SanjayVeeraraghavan();
         addObject(sanjayveeraraghavan,5,10);
         sanjayveeraraghavan.assignSeat();
+        
+        YaninCharoenpornsawat yanincharoenpornsawat = new YaninCharoenpornsawat();
+        addObject(yanincharoenpornsawat,2,4);
+        yanincharoenpornsawat.assignSeat();
 
     }
     
