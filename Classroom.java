@@ -237,6 +237,10 @@ public class Classroom extends World
         BrandonHuynh brandonhuynh = new BrandonHuynh();
         addObject(brandonhuynh,5,4);
         brandonhuynh.assignSeat();
+        
+        SamyuthaAyalasomayajula samyuthaayalasomayajula = new SamyuthaAyalasomayajula();
+        addObject(samyuthaayalasomayajula,6,3);
+        samyuthaayalasomayajula.assignSeat();
 
     }
     
