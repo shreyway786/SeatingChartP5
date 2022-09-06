@@ -241,6 +241,10 @@ public class Classroom extends World
         SamyuthaAyalasomayajula samyuthaayalasomayajula = new SamyuthaAyalasomayajula();
         addObject(samyuthaayalasomayajula,6,3);
         samyuthaayalasomayajula.assignSeat();
+        
+        ManuKorupolu manukorupolu = new ManuKorupolu();
+        addObject(manukorupolu,8,4);
+        manukorupolu.assignSeat();
 
     }
     
