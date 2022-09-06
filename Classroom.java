@@ -180,6 +180,10 @@ public class Classroom extends World
         SanjanaAlluri sanjanaalluri = new SanjanaAlluri();
         addObject(sanjanaalluri,3,3);
         sanjanaalluri.assignSeat();
+        
+        UttamLakumalla uttamlakumalla = new UttamLakumalla();
+        addObject(uttamlakumalla,9,4);
+        uttamlakumalla.assignSeat();
 
     }
     
