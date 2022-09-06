@@ -71,9 +71,9 @@ public class ShreyasTulsi extends Student implements SpecialInterestOrHobby
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
-            
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+                
+                SpiralingClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                
                 sitDown();
             }
         
@@ -97,32 +97,76 @@ public class ShreyasTulsi extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the ShreyasTulsi class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+    public void ClearClass(){
+       //gets rid of all of the projectiles that have been added
+       getWorld().removeObjects(getWorld().getObjects(Projectile.class));
+    }
+    public void sendProjectiles(int num) {
+        //places objects of kilgore trout along the path being travelled
+        for (int i=0; i< num; i++) {
+            Projectile proj = new Projectile((360/(i+1)));
+            getWorld().addObject(proj,getX(),getY());
+        }
+    }
+    
+    public void SpiralingClass(){
         setLocation(0,0);
          Greenfoot.delay(10);
-        // move right
+        // Moves right + places images of Kilgore Trout
+        
         for (int i=1;i<=9;i++){
             setLocation(i,0);
+            setRotation(i*4);
+            sendProjectiles(100);
             Greenfoot.delay(10);
         }
-        // move back
+        // Sprials Down
         for (int i=1;i<=5;i++){
             setLocation(9,i);
+            setRotation(i*70);
+            
             Greenfoot.delay(10);
         }      
-         // move left
+         // Moves left + places images of Kilgore Trout
         for (int i=9;i>=0;i--){
             setLocation(i,5);
+            setRotation(i*40);
+            sendProjectiles(100);
             Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
+        }
+        //Spirals down
+        for (int i=1;i<=3;i++){
+            setLocation(0,i+5);
+            setRotation(i*120);
+            Greenfoot.delay(10);
+        }
+          // Moves Right + places images of Kilgore Trout
+        for (int i=1;i<=9;i++){
+            setLocation(i,8);
+            setRotation(i*4);
+            sendProjectiles(100);
+            Greenfoot.delay(10);
+        }
+      
+        returnToSeat();
+        //Rotates until audio is done
+         for (int i=1;i<=18;i++){
+            setRotation(i*90);
+            
+           
             Greenfoot.delay(10);
         }   
-           Greenfoot.delay(20);
-           returnToSeat();
+           
+           setRotation(0);
+         
+           Greenfoot.delay(40);
+           ClearClass();
+        
+        
+       
     }
+   
+    
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
@@ -130,6 +174,7 @@ public class ShreyasTulsi extends Student implements SpecialInterestOrHobby
      */
      public void myHobby(String s) {
          System.out.println(s);
+         
 }
 
 }
