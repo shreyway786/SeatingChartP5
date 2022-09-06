@@ -221,6 +221,10 @@ public class Classroom extends World
         ManaPula manapula = new ManaPula();
         addObject(manapula,8,7);
         manapula.assignSeat();
+        
+        ManuKorupolu manukorupolu = new ManuKorupolu();
+        addObject(manukorupolu,8,4);
+        manukorupolu.assignSeat();
 
     }
     
