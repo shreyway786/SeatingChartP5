@@ -158,8 +158,8 @@ public class Classroom extends World
         haruto.assignSeat();
         
         ShreyasTulsi shreyastulsi = new ShreyasTulsi();
-        addObject(shreyastulsi,8,9);
-        shreyastulsi.assignSeat();
+        addObject(haruto,8,9);
+        haruto.assignSeat();
 
         AnitAnnadi anitannadi = new AnitAnnadi();
         addObject(anitannadi,5,3);
@@ -201,6 +201,10 @@ public class Classroom extends World
         EmilWilson emilwilson = new EmilWilson();
         addObject(emilwilson, 8, 10);
         emilwilson.assignSeat();
+        
+        MichaelWang michaelwang = new MichaelWang();
+        addObject(michaelwang,6,10);
+        michaelwang.assignSeat();
         
         SiddharthaMangamuri siddharthamangamuri = new SiddharthaMangamuri();
         addObject(siddharthamangamuri, 3, 6);
