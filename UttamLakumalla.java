@@ -72,7 +72,7 @@ public class UttamLakumalla extends Student implements SpecialInterestOrHobby
             // Call the sitDown() method to move back  to your seat
             
                 circleClass(); // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-                t36Met(8,4);
+                t36Met(9,4);
                 sitDown();
             }
         
