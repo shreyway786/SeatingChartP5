@@ -158,8 +158,8 @@ public class Classroom extends World
         haruto.assignSeat();
         
         ShreyasTulsi shreyastulsi = new ShreyasTulsi();
-        addObject(haruto,8,9);
-        haruto.assignSeat();
+        addObject(shreyastulsi,8,9);
+        shreyastulsi.assignSeat();
 
         AnitAnnadi anitannadi = new AnitAnnadi();
         addObject(anitannadi,5,3);
