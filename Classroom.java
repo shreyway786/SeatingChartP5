@@ -208,6 +208,14 @@ public class Classroom extends World
         YaninCharoenpornsawat yanincharoenpornsawat = new YaninCharoenpornsawat();
         addObject(yanincharoenpornsawat,2,4);
         yanincharoenpornsawat.assignSeat();
+        
+        MahathiPothukuchi mahathipothukuchi = new MahathiPothukuchi();
+        addObject(mahathipothukuchi,6,7);
+        mahathipothukuchi.assignSeat();
+        
+        ManaPula manapula = new ManaPula();
+        addObject(manapula,8,7);
+        manapula.assignSeat();
 
     }
     
