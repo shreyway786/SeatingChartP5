@@ -174,12 +174,12 @@ public class Classroom extends World
         uttararai.assignSeat();
         
         PranavPalagummi pranavpalagummi = new PranavPalagummi();
-        addObject(pranavpalagummi,8,6)
+        addObject(pranavpalagummi,8,6);
         pranavpalagummi.assignSeat();
         
         
         PranavPabbisetty pranavpabbisetty = new PranavPabbisetty();
-        addObject(pranavpabbisetty,9,6)
+        addObject(pranavpabbisetty,9,6);
         pranavpabbisetty.assignSeat();
         
         JoshFrendberg joshfrendberg = new JoshFrendberg();
