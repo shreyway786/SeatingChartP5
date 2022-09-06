@@ -20,6 +20,8 @@ public abstract class Student extends Actor
    
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
    public String portraitFile; // image used when sitting
+   public String readingFile; // image used when reading
+
    public String standingFile; // image used when standing
    public String goingFile; // image used when going back to seat
    public String winFile; // image used at the end before being seated
