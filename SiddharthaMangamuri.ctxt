@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=SiddharthaMangamuri
+comment0.text=\r\n\ @author\ Mr.\ Kaehms\r\n\ @version\ 2.0\ Aug\ 13,\ 2019\r\n\ @version\ 3.0\ July\ 21,\ 2020\r\n
+comment1.params=f\ l\ r\ s
+comment1.target=SiddharthaMangamuri(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ \ \ \ \ Main\ constructor\ that\ uses\ input\ for\ first\ name,\ last\ name,\ and\ then\ seat\ position\ according\ to\ where\ I\ sit\r\n\ \ \ \ \ on\ the\ actual\ seating\ chart.\ After\ this,\ it\ uses\ these\ same\ variables\ and\ creates\ firstName,\ lastName,\ mySeatX,\r\n\ \ \ \ \ and\ mySeatY\ which\ is\ used\ later\ on\ in\ the\ program.\ After\ this,\ it\ calls\ the\ portrait\ file\ which\ is\ a\ picture\r\n\ \ \ \ \ of\ me\ and\ then\ the\ standing\ file\ alongside\ the\ sound\ file.\ All\ of\ these\ files\ are\ already\ inside\ of\ the\ \r\n\ \ \ \ \ directory,\ and\ it\ just\ used\ code\ to\ call\ it\ and\ then\ set\ the\ starting\ image\ as\ the\ portrait\ file.\ Also\ put\ the\r\n\ \ \ \ \ boolean\ variable,\ sitting,\ to\ true.\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ \ \ \ \ \ This\ next\ method,\ act(),\ allows\ the\ actor\ to\ move.\ When\ the\ mouse\ is\ clicked,\ the\ image\ is\ no\ longer\r\n\ \ \ \ \ \ sitting\ and\ then\ the\ image\ is\ set\ to\ the\ standing\ file.\ It\ allows\ the\ image\ to\ then\ move\ with\ my\ own\r\n\ \ \ \ \ \ unique\ abstract\ method\ as\ well\ as\ my\ unique\ animation,and\ printing\ information\ to\ the\ console.\ \r\n
+comment3.params=
+comment3.target=void\ getName()
+comment3.text=\r\n\ Prints\ the\ first\ and\ last\ name\ to\ the\ console\r\n
+comment4.params=x\ y\ z
+comment4.target=void\ animation(int,\ int,\ int)
+comment4.text=\r\n\ \ \ \ \ This\ animation\ method\ takes\ 3\ variables\ and\ then\ animates\ the\ actor\ by\ moving\ it\ in\ a\ specific\ way\r\n
+comment5.params=s
+comment5.target=void\ myHobby(java.lang.String)
+comment5.text=\r\n\ myHobby\ is\ an\ interface\ that\ I\ used\ to\ show\ my\ hobby.\r\n
+comment6.params=
+comment6.target=void\ rotate()
+comment6.text=\r\n\ My\ abstract\ class\ which\ first\ rotates\ the\ standingFile\ image,\ then\ prints\ to\ the\ console.\ \r\n
+numComments=7
