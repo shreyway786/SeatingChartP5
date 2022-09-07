@@ -245,6 +245,10 @@ public class Classroom extends World
         ManuKorupolu manukorupolu = new ManuKorupolu();
         addObject(manukorupolu,8,4);
         manukorupolu.assignSeat();
+        
+        MayaPoghosyan mayapoghosyan = new MayaPoghosyan();
+        addObject(mayapoghosyan,5,7);
+        mayapoghosyan.assignSeat();
 
     }
     
