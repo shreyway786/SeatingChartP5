@@ -257,6 +257,10 @@ public class Classroom extends World
         SrishNigam srishnigam = new SrishNigam();
         addObject(srishnigam, 5, 6);
         srishnigam.assignSeat();
+        
+        AaryanSinha aaryansinha = new AaryanSinha();
+        addObject(aaryansinha,6,9);
+        aaryansinha.assignSeat();
 
     }
     
