@@ -253,6 +253,10 @@ public class Classroom extends World
         MayaPoghosyan mayapoghosyan = new MayaPoghosyan();
         addObject(mayapoghosyan,5,7);
         mayapoghosyan.assignSeat();
+        
+        SrishNigam srishnigam = new SrishNigam();
+        addObject(srishnigam, 5, 6);
+        srishnigam.assignSeat();
 
     }
     
