@@ -48,9 +48,9 @@ public class SamarthPasala extends Student implements SpecialInterestOrHobby
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        //soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         img = new GreenfootImage(portraitFile);
         img.scale(60, 60);
         img.rotate(90);
@@ -68,16 +68,17 @@ public class SamarthPasala extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
+                img = new GreenfootImage(standingFile);
+                img.scale(100, 100);
                 setImage(img);
-                System.out.println(""); // Print a blank line to create space between any student output.
+                //System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
-                myHobby("I like to time travel!");
+               myHobby("I like to hang out with friends, play basketball, and listen to music!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
-            
                 circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
@@ -107,25 +108,35 @@ public class SamarthPasala extends Student implements SpecialInterestOrHobby
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
-        for (int i=1;i<=9;i++){
+        for (int i=1;i<=4;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
         // move back
-        for (int i=1;i<=5;i++){
+        for (int i=1;i<=7;i++){
             setLocation(9,i);
             Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
+        }           
               // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
+        setLocation(3, 7);
+        Greenfoot.delay(5);
+        for (int i=3;i>=0;i--){
+            setLocation(i, 7);
             Greenfoot.delay(10);
         }   
+          // move left again
+        for (int i=12;i>=7;i--){
+            setLocation(i,5);
+            Greenfoot.delay(10);
+        } 
+        setLocation (2, 2);
+        Greenfoot.delay(5);
+        setLocation(4, 4);
+        Greenfoot.delay(5);
+        setLocation (1, 3);
+        Greenfoot.delay(5);
+        setLocation (2, 3);
+        Greenfoot.delay(5);
            Greenfoot.delay(20);
            returnToSeat();
     }
