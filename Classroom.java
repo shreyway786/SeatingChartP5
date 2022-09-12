@@ -276,6 +276,10 @@ public class Classroom extends World
         Takshu Takshu = new Takshu();
         addObject(Takshu,2,7);
         Takshu.assignSeat();
+        
+        SamarthPasala samarthpasala = new SamarthPasala();
+        addObject(samarthpasala,2,7);
+        samarthpasala.assignSeat();
 
     }
     
