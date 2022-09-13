@@ -69,7 +69,7 @@ public class DiegoMunoz extends Student implements SpecialInterestOrHobby
                 sitting=false;
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                // sayName(soundFile); //
+                sayName(soundFile); 
             
                 myHobby("I like to time travel!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
