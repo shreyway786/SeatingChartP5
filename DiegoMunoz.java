@@ -29,8 +29,8 @@ public class DiegoMunoz extends Student implements SpecialInterestOrHobby
         mySeatX=r;
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        //soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         img = new GreenfootImage(portraitFile);
         //img.scale(60,60);
         //img.rotate(90);
@@ -49,8 +49,8 @@ public class DiegoMunoz extends Student implements SpecialInterestOrHobby
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg"; 
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg"; //
-       /// soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";//
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg"; 
+       soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         img = new GreenfootImage(portraitFile);
         img.rotate(90);
         setImage(img);
